@@ -10,13 +10,10 @@ on:
     - cron: 15 6 * * SUN
   workflow_dispatch:
 
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "Event ${{ github.event_name }}"
-        - run: echo "Branch ${{ github.ref }}"
-        - run: tree
-
-    
-    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Event ${{ github.event_name }}"
+      - run: echo "Branch ${{ github.ref }}"
+      - run: tree
