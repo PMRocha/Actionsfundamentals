@@ -20,4 +20,4 @@ jobs:
           who-to-greet: '@PMRocha'
 
       - name: Output time set in the container
-        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
+        run: echo "The time was ${{ steps.hello-action.outputs.current-time }} when the action said hello"
